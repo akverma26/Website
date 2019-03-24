@@ -1,0 +1,102 @@
+body,html{
+  	height: 100%;
+	margin: 0;
+	text-align: center;
+	font-family: tbbold;
+	font-weight: bold;font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+.blur-dark{
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 15px #00ffec;
+}
+
+.wide-padding{
+	padding: 5px 10px 5px 10px;
+}
+
+.name{
+	font-family: tbbold;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.bg-image{
+  background-image: url("bg2.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlayGradient{
+	height: 100%;
+	width: 100%;
+	padding: 10px 0 10px 0;
+	background: linear-gradient(0deg, rgba(36,36,36,0.7), rgba(36,36,36,0), rgba(36,36,36,0));
+}
+
+.zoom:hover{
+	transform: scaleX(1.5);
+}
+
+header{
+	min-width: 170px;
+	font-family: tbbold;
+	font-size: 25px;
+	color: #fff;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	overflow: hidden;
+	text-align: center;
+	box-shadow: 3px 3px 15px #00ffec;
+	transform: translate(0, -50%);
+}
+
+.vertical-center{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.on{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+#profile_pic{
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+	background-color: #00ffec;
+}
+
+.profile-pic-border{
+	height: 310px;
+	width: 310px;
+	background: linear-gradient(0deg,#ff0061, #00ffff,#9800ff,#00ffff,#f9ff00,#00ffff);
+	border-radius: 200%;
+	box-shadow: 3px 3px 15px #00ffec;
+	animation-name: rotate;
+	animation-timing-function: linear;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@font-face {
+  font-family: tbbold;
+  src: url(sft.ttf);
+}
